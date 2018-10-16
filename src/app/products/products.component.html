@@ -10,7 +10,7 @@ Products
 </tr>
 <tr *ngFor="let product of products$">
     <td> {{ product.id }} </td>
-    <td> {{ product.name }} </td>
+    <td><a href ="http://localhost:4200/products/{{ product.id }}"> {{ product.name }} </a></td>
     <td> {{ product.price }} </td>
 </tr>
 </table>

@@ -1,0 +1,20 @@
+<h1>
+Product detailed
+</h1>
+<div>
+<table  style="width:100%">
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Address</th>
+  <th>Phone</th>
+</tr>
+<tr >
+  <td> {{ customer$.id }} </td>
+  <td> {{ customer$.name }} </td>
+  <td> {{ customer$.address }} </td>
+  <td> {{ customer$.phone }} </td>
+    <td> <button type="button" (click)="deleteCustomer()" routerLink="/customers" class="btn btn-default">Delete</button> </td>
+</tr>
+</table>
+</div>
