@@ -7,7 +7,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
-
+import { UpdateProductComponent } from './update-product/update-product.component';
+import { UpdateCustomerComponent } from './update-customer/update-customer.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
     component: CreateProductComponent
   },
   {
+    path: 'products/update/:id',
+    component: UpdateProductComponent
+  },
+  {
     path: 'customers',
     component: CustomersComponent
   },
@@ -33,7 +38,11 @@ const routes: Routes = [
   {
     path: 'customers/create/new',
     component: CreateCustomerComponent
-  }
+  },
+  {
+    path: 'customers/update/:id',
+    component: UpdateCustomerComponent
+  },
 ];
 
 @NgModule({

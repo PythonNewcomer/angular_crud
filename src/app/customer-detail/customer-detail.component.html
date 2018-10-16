@@ -14,7 +14,8 @@ Product detailed
   <td> {{ customer$.name }} </td>
   <td> {{ customer$.address }} </td>
   <td> {{ customer$.phone }} </td>
-    <td> <button type="button" (click)="deleteCustomer()" routerLink="/customers" class="btn btn-default">Delete</button> </td>
+  <td><a href="http://localhost:4200/customers/update/{{ customer$.id }}" class="btn btn-success" role="button">Edit</a></td>
+  <td> <button type="button" (click)="deleteCustomer()" routerLink="/customers" class="btn btn-default">Delete</button> </td>
 </tr>
 </table>
 </div>

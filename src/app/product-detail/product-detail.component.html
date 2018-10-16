@@ -12,6 +12,7 @@ Product detailed
     <td> {{ product$.id }} </td>
     <td> {{ product$.name }} </td>
     <td> {{ product$.price }} </td>
+    <td><a href="http://localhost:4200/products/update/{{ product$.id }}" class="btn btn-success" role="button">Edit</a></td>
     <td> <button type="button" (click)="deleteProduct()" routerLink="/products" class="btn btn-default">Delete</button> </td>
 </tr>
 </table>

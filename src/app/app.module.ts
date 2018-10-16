@@ -11,6 +11,8 @@ import { CustomerDetailComponent } from './customer-detail/customer-detail.compo
 import { CreateProductComponent } from './create-product/create-product.component';
 import { FormsModule }   from '@angular/forms';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
+import { UpdateCustomerComponent } from './update-customer/update-customer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CreateCustomerComponent } from './create-customer/create-customer.compo
     ProductDetailComponent,
     CustomerDetailComponent,
     CreateProductComponent,
-    CreateCustomerComponent
+    CreateCustomerComponent,
+    UpdateProductComponent,
+    UpdateCustomerComponent
   ],
   imports: [
     BrowserModule,

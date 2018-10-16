@@ -15,7 +15,8 @@ export class ProductsComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getProducts().subscribe(data => this.products$ = data
+    this.data.getProducts().subscribe(
+      data => this.products$ = data
     );
   }
 }

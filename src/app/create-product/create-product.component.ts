@@ -9,6 +9,7 @@ import { Router } from "@angular/router";
   templateUrl: './create-product.component.html',
   styleUrls: ['./create-product.component.css']
 })
+
 export class CreateProductComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private router:Router, private data: DataService) {}

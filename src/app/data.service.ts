@@ -49,4 +49,22 @@ export class DataService {
     };
     return this.http.post('http://localhost:4200/api/customers', customer);
   }
+
+  updateProduct(product, name, price) {
+    const newProduct = {
+      name: name,
+      price: price
+    };
+    return this.http.put('http://localhost:4200/api/products/' + product.id, newProduct);
+  }
+
+  updateCustomer(customer, name, address, phone) {
+    const newCustomer = {
+      name: name,
+      address: address,
+      phone: phone
+    };
+    return this.http.put('http://localhost:4200/api/customers/' + customer.id, newCustomer);
+  }
+
 }
