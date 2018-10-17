@@ -13,6 +13,7 @@ import { FormsModule }   from '@angular/forms';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { UpdateCustomerComponent } from './update-customer/update-customer.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UpdateCustomerComponent } from './update-customer/update-customer.compo
     CreateProductComponent,
     CreateCustomerComponent,
     UpdateProductComponent,
-    UpdateCustomerComponent
+    UpdateCustomerComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

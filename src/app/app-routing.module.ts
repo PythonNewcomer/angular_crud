@@ -9,8 +9,13 @@ import { CreateProductComponent } from './create-product/create-product.componen
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { UpdateCustomerComponent } from './update-customer/update-customer.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
+  {
+    path: 'main',
+    component: MainPageComponent
+  },
   {
     path: 'products',
     component: ProductsComponent
