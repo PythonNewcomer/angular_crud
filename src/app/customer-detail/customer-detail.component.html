@@ -15,8 +15,8 @@
   <td> {{ customer$.name }} </td>
   <td> {{ customer$.address }} </td>
   <td> {{ customer$.phone }} </td>
-  <td><a href="http://localhost:4200/customers/update/{{ customer$.id }}" class="btn btn-success" role="button" style="color:#ffffff; width:80px;">Edit</a></td>
-  <td> <button type="button" (click)="deleteCustomer()" routerLink="/customers" class="btn btn-danger">Delete</button> </td>
+  <td><a href="http://localhost:4200/customers/update/{{ customer$.id }}" class="btn btn-success" role="button" style="color:#ffffff">Edit <span class="fa fa-pencil"></span></a></td>
+  <td> <button type="button" (click)="deleteCustomer()" routerLink="/customers" class="btn btn-danger">Delete <span class="fa fa-trash"></span></button> </td>
 </tr>
 </table>
 </div>

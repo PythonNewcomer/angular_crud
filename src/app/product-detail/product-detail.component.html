@@ -13,8 +13,8 @@
     <td> {{ product$.id }} </td>
     <td> {{ product$.name }} </td>
     <td> {{ product$.price }} </td>
-    <td><a href="http://localhost:4200/products/update/{{ product$.id }}" class="btn btn-success" style="color:#ffffff; width:80px;" role="button">Edit</a></td>
-    <td> <button type="button" (click)="deleteProduct()" routerLink="/products" class="btn btn-danger">Delete</button> </td>
+    <td><a href="http://localhost:4200/products/update/{{ product$.id }}" class="btn btn-success" style="color:#ffffff" role="button">Edit <span class="fa fa-pencil"></span></a></td>
+    <td> <button type="button" (click)="deleteProduct()" routerLink="/products" class="btn btn-danger"> Delete <span class="fa fa-trash"></span></button> </td>
 </tr>
 </table>
 </div>

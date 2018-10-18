@@ -1,4 +1,5 @@
 <div class="jumbotron" style="width:500px; margin-left:300px">
+  <a href="http://localhost:4200/customers/{{ customer$.id }}" style="color:#787878"><span class="fa fa-reply"></span> Back </a><br><br>
   <h2> Update customer № {{ customer$.id }}</h2><br>
   <form #customerForm="ngForm" (ngSubmit)="onSubmit(name, address, phone)">
     <div class="form-group">
@@ -16,5 +17,5 @@
       <input type="phone" class="form-control" id="phone"
       placeholder="Enter new number..." [(ngModel)]="phone" name="phone">
     </div><br>
-    <button type="submit" class="btn btn-success">Update</button>
+    <button type="submit" class="btn btn-success">Update <span class="fa fa-send"></span></button>
   </form>
