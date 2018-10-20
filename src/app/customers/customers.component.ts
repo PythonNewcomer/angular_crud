@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 
 export class CustomersComponent implements OnInit {
-
+  title = 'customers';
   customers$: Object;
 
   constructor(private data: DataService) { }

@@ -10,6 +10,8 @@ import { Observable } from 'rxjs';
 
 export class ProductsComponent implements OnInit {
 
+  title='products';
+
   products$: Object;
 
   constructor(private data: DataService) { }

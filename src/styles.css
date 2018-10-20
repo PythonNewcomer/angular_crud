@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-     margin: 0;
-     background: #ffffff;
-     font-family: 'Montserrat', sans-serif;
-     height: 100vh;
-     line-height: 1.8;
+  margin: 0;
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  line-height: 1.8;
 }
 h1 {
   text-align: center;
@@ -24,20 +24,20 @@ label {
   font-size: 18px;
 }
 a:link {
-    color: #17915E;
+  color: #17915E;
 }
 
 a:visited {
-    color: #1317C4;
+  color: #1317C4;
 }
 
 a:hover {
-    color: #226437;
-    text-decoration: none;
+  color: #226437;
+  text-decoration: none;
 }
 
 a:active {
-    color: #741BFD;
+  color: #741BFD;
 }
 
 .padding{
@@ -46,18 +46,12 @@ a:active {
   }
 
 
-  .back {
-    background-image: url("/assets/images/main.jpg");
-    background-repeat: no-repeat;
-    background-size: 1450px 768px;
-    }
-
-    .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       background-color: #b4b4b4;
-       color: #ffffff;
-       text-align: center;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #b4b4b4;
+  color: #ffffff;
+  text-align: center;
     }
