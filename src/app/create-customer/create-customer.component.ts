@@ -11,6 +11,8 @@ import { Router } from "@angular/router";
 })
 export class CreateCustomerComponent implements OnInit {
 
+  title = 'createCustomer';
+
   constructor(private route: ActivatedRoute, private router:Router, private data: DataService) {}
 
   onSubmit(name, address, phone) {

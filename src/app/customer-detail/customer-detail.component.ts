@@ -11,6 +11,8 @@ import { Router } from "@angular/router";
 })
 export class CustomerDetailComponent implements OnInit {
 
+  title = 'customerDetail';
+
   customer$: Object;
 
   constructor(private route: ActivatedRoute, private router:Router, private data: DataService) {

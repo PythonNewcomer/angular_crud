@@ -12,6 +12,8 @@ import { Router } from "@angular/router";
 
 export class UpdateProductComponent implements OnInit {
 
+  title = 'updateProduct';
+
   product$: Object;
 
   constructor(private route: ActivatedRoute, private router:Router, private data: DataService) {

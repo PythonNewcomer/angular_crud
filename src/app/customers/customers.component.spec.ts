@@ -13,13 +13,11 @@ describe('CustomersComponent', () => {
     .compileComponents();
   }));
 
-
   it('should create', async(() => {
     const fixture = TestBed.createComponent(CustomersComponent);
     const customer = fixture.componentInstance;
     expect(customer).toBeTruthy();
-  })
-);
+  }));
 
   it(`should have as title 'customers'`, async(() => {
     const fixture = TestBed.createComponent(CustomersComponent);

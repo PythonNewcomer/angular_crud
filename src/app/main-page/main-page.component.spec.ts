@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MainPageComponent } from './main-page.component';
 
 describe('MainPageComponent', () => {
@@ -22,4 +21,10 @@ describe('MainPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'mainPage'`, () => {
+    fixture = TestBed.createComponent(MainPageComponent);
+    component = fixture.debugElement.componentInstance;
+    expect(component.title).toEqual('mainPage');
+});
 });
