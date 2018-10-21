@@ -6,7 +6,7 @@
     <th>Product</th>
     <th>Price</th>
 </tr>
-<tr *ngFor="let product of products$">
+<tr *ngFor="let product of products$ | async">
     <td> {{ product.id }} </td>
     <td><a href ="http://localhost:4200/products/{{ product.id }}"> {{ product.name }}</a></td>
     <td> {{ product.price }} </td>

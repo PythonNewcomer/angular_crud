@@ -1,8 +1,10 @@
-import {TestBed, async } from '@angular/core/testing';
+import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { CustomersComponent } from './customers.component';
 import { HttpClientModule } from '@angular/common/http';
 
 describe('CustomersComponent', () => {
+  let component: CustomersComponent;
+  let fixture: ComponentFixture<CustomersComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -13,15 +15,18 @@ describe('CustomersComponent', () => {
     .compileComponents();
   }));
 
+  beforeEach(async(() => {
+    fixture = TestBed.createComponent(CustomersComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  }));
+
   it('should create', async(() => {
-    const fixture = TestBed.createComponent(CustomersComponent);
-    const customer = fixture.componentInstance;
-    expect(customer).toBeTruthy();
+    expect(component).toBeTruthy();
   }));
 
   it(`should have as title 'customers'`, async(() => {
-    const fixture = TestBed.createComponent(CustomersComponent);
-    const component = fixture.debugElement.componentInstance;
+    component = fixture.debugElement.componentInstance;
     expect(component.title).toEqual('customers');
 }));
 });

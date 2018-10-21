@@ -12,19 +12,18 @@ describe('MainPageComponent', () => {
     .compileComponents();
   }));
 
-  beforeEach(() => {
+  beforeEach(async(() => {
     fixture = TestBed.createComponent(MainPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }));
 
-  it('should create', () => {
+  it('should create', async(() => {
     expect(component).toBeTruthy();
-  });
+  }));
 
-  it(`should have as title 'mainPage'`, () => {
-    fixture = TestBed.createComponent(MainPageComponent);
+  it(`should have as title 'mainPage'`, async(() => {
     component = fixture.debugElement.componentInstance;
     expect(component.title).toEqual('mainPage');
-});
+}));
 });
