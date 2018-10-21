@@ -29,4 +29,9 @@ describe('ProductsComponent', () => {
     component = fixture.debugElement.componentInstance;
     expect(component.title).toEqual('products');
   }));
+
+  it('should have a title in a h1 tag', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('PRODUCTS');
+  }));
 });

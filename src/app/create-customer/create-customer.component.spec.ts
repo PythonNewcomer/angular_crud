@@ -31,4 +31,10 @@ describe('CreateCustomerComponent', () => {
     component = fixture.debugElement.componentInstance;
     expect(component.title).toEqual('createCustomer');
 }));
+
+  it('should have a title in a h2 tag', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h2').textContent).toContain('Add new customer');
+  }));
+
 });

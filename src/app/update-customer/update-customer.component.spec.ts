@@ -26,4 +26,10 @@ describe('UpdateCustomerComponent', () => {
     const component = fixture.debugElement.componentInstance;
     expect(component.title).toEqual('updateCustomer');
 }));
+
+  it('should render title in a h2 tag', async(() => {
+    const fixture = TestBed.createComponent(UpdateCustomerComponent);
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h2').textContent).toContain('Update customer');
+  }));
 });

@@ -31,7 +31,7 @@ describe('AppComponent', () => {
     expect(component.title).toEqual('sombra-angular-test');
   }));
   it('should render title in a h1 tag', async(() => {
-    component = fixture.debugElement.nativeElement;
-    expect(component.querySelector('h1').textContent).toContain('Welcome to sombra-angular-test!');
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to sombra-angular-test!');
   }));
 });
