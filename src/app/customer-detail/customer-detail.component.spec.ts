@@ -19,4 +19,10 @@ describe('CustomerDetailComponent', () => {
     const component = fixture.componentInstance;
     expect(component).toBeTruthy();
   }));
+
+  it(`should have as title 'customerDetail'`, async(() => {
+    const fixture = TestBed.createComponent(CustomerDetailComponent);
+    const component = fixture.debugElement.componentInstance;
+    expect(component.title).toEqual('customerDetail');
+}));
 });
