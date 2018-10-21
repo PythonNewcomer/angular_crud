@@ -1,17 +1,14 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {TestBed, async } from '@angular/core/testing';
 import { CustomersComponent } from './customers.component';
-import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('CustomersComponent', () => {
-  let component: CustomersComponent;
-  let fixture: ComponentFixture<CustomersComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-      RouterTestingModule
-    ],
-      declarations: [ CustomersComponent ]
+      declarations: [ CustomersComponent ],
+      imports: [ HttpClientModule ],
+      providers: [ HttpClientModule ]
     })
     .compileComponents();
   }));
@@ -24,9 +21,9 @@ describe('CustomersComponent', () => {
   })
 );
 
-//   it(`should have as title 'customers'`, async(() => {
-//     fixture = TestBed.createComponent(CustomersComponent);
-//     component = fixture.debugElement.componentInstance;
-//     expect(component.getTitle()).toEqual('customers');
-// }));
+  it(`should have as title 'customers'`, async(() => {
+    const fixture = TestBed.createComponent(CustomersComponent);
+    const component = fixture.debugElement.componentInstance;
+    expect(component.title).toEqual('customers');
+}));
 });

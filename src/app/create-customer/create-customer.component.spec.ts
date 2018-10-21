@@ -1,25 +1,23 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed, async } from '@angular/core/testing';
 import { CreateCustomerComponent } from './create-customer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('CreateCustomerComponent', () => {
-  let component: CreateCustomerComponent;
-  let fixture: ComponentFixture<CreateCustomerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CreateCustomerComponent ]
+      declarations: [ CreateCustomerComponent ],
+      imports: [ HttpClientModule, RouterTestingModule, ReactiveFormsModule, FormsModule ],
+      providers: [ HttpClientModule, RouterTestingModule ]
     })
     .compileComponents();
   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CreateCustomerComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
+  it('should create', async(() => {
+    const fixture = TestBed.createComponent(CreateCustomerComponent);
+    const component = fixture.componentInstance;
     expect(component).toBeTruthy();
-  });
+  }));
 });

@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
 import { CreateProductComponent } from './create-product/create-product.component';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { UpdateCustomerComponent } from './update-customer/update-customer.component';
@@ -35,7 +35,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

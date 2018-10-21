@@ -1,13 +1,14 @@
 import { TestBed } from '@angular/core/testing';
-
 import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('DataService', () => {
   let dataService: DataService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [DataService]
+      imports: [ HttpClientModule ],
+      providers: [DataService, HttpClientModule]
     });
 
     dataService = TestBed.get(DataService);
