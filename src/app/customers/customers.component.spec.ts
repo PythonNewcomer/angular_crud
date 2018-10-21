@@ -30,8 +30,9 @@ describe('CustomersComponent', () => {
     expect(component.title).toEqual('customers');
 }));
 
-it('should have a title in a h1 tag', async(() => {
-  const compiled = fixture.debugElement.nativeElement;
-  expect(compiled.querySelector('h1').textContent).toContain('CUSTOMERS');
-}));
+  it('should have a title in a h1 tag', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('CUSTOMERS');
+  }));
+
 });

@@ -13,7 +13,7 @@ import { Router } from "@angular/router";
 export class CreateProductComponent implements OnInit {
 
   title = 'createProduct';
-  
+
   constructor(private route: ActivatedRoute, private router:Router, private data: DataService) {}
 
   onSubmit(name, price) {

@@ -1,22 +1,23 @@
 <div class="jumbotron">
   <h1>CUSTOMER DETAILS</h1>
-<div>
-<table class="table table-hover" style="width:100%">
-<tr>
-  <th>ID</th>
-  <th>Name</th>
-  <th>Address</th>
-  <th>Phone</th>
-  <th></th>
-  <th></th>
-</tr>
-<tr >
-  <td> {{ customer$.id }} </td>
-  <td> {{ customer$.name }} </td>
-  <td> {{ customer$.address }} </td>
-  <td> {{ customer$.phone }} </td>
-  <td><a href="http://localhost:4200/customers/update/{{ customer$.id }}" class="btn btn-success" role="button" style="color:#ffffff">Edit <span class="fa fa-pencil"></span></a></td>
-  <td> <button type="button" (click)="deleteCustomer()" routerLink="/customers" class="btn btn-danger">Delete <span class="fa fa-trash"></span></button> </td>
-</tr>
-</table>
+  <div>
+    <table class="table table-hover" style="width:100%">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td> {{ customer$.id }} </td>
+        <td> {{ customer$.name }} </td>
+        <td> {{ customer$.address }} </td>
+        <td> {{ customer$.phone }} </td>
+        <td><a href="http://localhost:4200/customers/update/{{ customer$.id }}" class="btn btn-success" role="button" style="color:#ffffff">Edit <span class="fa fa-pencil"></span></a></td>
+        <td> <button type="button" (click)="deleteCustomer()" routerLink="/customers" class="btn btn-danger">Delete <span class="fa fa-trash"></span></button> </td>
+      </tr>
+    </table>
+  </div>
 </div>

@@ -31,4 +31,5 @@ describe('ProductDetailComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('PRODUCT DETAILS');
   }));
+  
 });

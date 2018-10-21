@@ -9,6 +9,7 @@ import { Router } from "@angular/router";
   templateUrl: './update-customer.component.html',
   styleUrls: ['./update-customer.component.css']
 })
+
 export class UpdateCustomerComponent implements OnInit {
 
   title = 'updateCustomer';
@@ -31,4 +32,4 @@ export class UpdateCustomerComponent implements OnInit {
       this.router.navigateByUrl("/customers");
   }
 
-  }
+}

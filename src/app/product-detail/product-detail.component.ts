@@ -30,6 +30,6 @@ export class ProductDetailComponent implements OnInit {
       data => this.product$ = data
     );
     this.router.navigateByUrl("/products");
-}
+  }
 
 }

@@ -9,6 +9,7 @@ import { Router } from "@angular/router";
   templateUrl: './create-customer.component.html',
   styleUrls: ['./create-customer.component.css']
 })
+
 export class CreateCustomerComponent implements OnInit {
 
   title = 'createCustomer';

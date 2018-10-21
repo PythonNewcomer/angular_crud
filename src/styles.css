@@ -6,23 +6,28 @@ body {
   height: 100vh;
   line-height: 1.8;
 }
+
 h1 {
   text-align: center;
   padding-bottom: 20px;
   text-decoration: underline;
   word-spacing: 10px;
 }
+
 th {
   font-size: 18px;
   background-color: #3cb371;
   text-decoration: underline;
 }
+
 form {
   width: 425px;
 }
+
 label {
   font-size: 18px;
 }
+
 a:link {
   color: #17915E;
 }
@@ -40,11 +45,10 @@ a:active {
   color: #741BFD;
 }
 
-.padding{
+.padding {
   padding-top: 20px;
   padding-bottom: 20px;
-  }
-
+}
 
 .footer {
   position: fixed;
@@ -54,4 +58,4 @@ a:active {
   background-color: #b4b4b4;
   color: #ffffff;
   text-align: center;
-    }
+}

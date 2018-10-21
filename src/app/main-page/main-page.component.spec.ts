@@ -25,5 +25,6 @@ describe('MainPageComponent', () => {
   it(`should have as title 'mainPage'`, async(() => {
     component = fixture.debugElement.componentInstance;
     expect(component.title).toEqual('mainPage');
-}));
+  }));
+
 });

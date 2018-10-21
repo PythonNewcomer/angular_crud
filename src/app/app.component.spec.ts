@@ -26,10 +26,12 @@ describe('AppComponent', () => {
   it('should create the app', async(() => {
     expect(component).toBeTruthy();
   }));
+
   it(`should have as title 'sombra-angular-test'`, async(() => {
     component = fixture.debugElement.componentInstance;
     expect(component.title).toEqual('sombra-angular-test');
   }));
+
   it('should render title in a h1 tag', async(() => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to sombra-angular-test!');

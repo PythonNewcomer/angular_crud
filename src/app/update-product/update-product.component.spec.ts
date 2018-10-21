@@ -32,4 +32,5 @@ describe('UpdateProductComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h2').textContent).toContain('Update product');
   }));
+  
 });

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
 import { ActivatedRoute } from "@angular/router";
@@ -30,6 +30,6 @@ export class CustomerDetailComponent implements OnInit {
       data => this.customer$ = data
     );
     this.router.navigateByUrl("/customers");
-}
+  }
 
 }
