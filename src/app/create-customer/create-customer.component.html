@@ -4,8 +4,11 @@
   <form #customerForm="ngForm" (ngSubmit)="onSubmit(name, address, phone)">
     <div class="form-group">
       <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter customers' name..." required
-               [(ngModel)]="name" name="name">
+      <input type="text" class="form-control" placeholder="Enter customers' name..." name="name"
+          [(ngModel)]="customerName" #name="ngModel" required>
+          <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+            Name is required!
+          </div>
     </div>
     <div class="form-group">
       <label for="address">Address:</label>
@@ -14,8 +17,11 @@
     </div>
     <div class="form-group">
       <label for="phone">Phone:</label>
-      <input type="phone" class="form-control" id="phone"
-      placeholder="Enter phone number..." [(ngModel)]="phone" name="phone">
+      <input type="phone" class="form-control" placeholder="Enter phone number..." name="phone"
+      [(ngModel)]="customerPhone" #phone="ngModel" required>
+      <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+        Phone is required!
+      </div>
     </div><br>
-    <button type="submit" class="btn btn-success">Add <span class="fa fa-send"></span></button>
+    <button [disabled]="name.invalid || phone.invalid" type="submit" class="btn btn-success">Add <span class="fa fa-send"></span></button>
   </form>
