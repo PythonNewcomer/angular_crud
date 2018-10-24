@@ -1,7 +1,7 @@
 <div class="jumbotron" style="width:500px; margin-left:300px">
   <a href="http://localhost:4200/products/{{ product$.id }}" style="color:#787878"><span class="fa fa-reply"></span> Back </a><br><br>
   <h2> Update product № {{ product$.id }} </h2><br>
-  <form #productForm="ngForm" (ngSubmit)="onSubmit(name, price)">
+  <form #productForm="ngForm" (ngSubmit)="onSubmit(productName, price)">
     <div class="form-group">
       <label for="name">Product:</label>
       <input type="text" class="form-control" placeholder="Enter new name..." name="name"
